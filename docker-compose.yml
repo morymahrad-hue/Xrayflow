@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  xray-3x-ui-panel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 3x-ui-pro:latest
+    container_name: 3x-ui-pro-panel
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - APP_URL=http://localhost:3000
+      # Optional: set your VPS IP to automatically prepend it as the primary node
+      # - SERVER_IP=159.69.134.82
+      # - CUSTOM_DOMAIN=sub.your-domain.com
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"

@@ -1,0 +1,6 @@
+{
+  "name": "3X-UI Pro - Xray & V2Ray Management Panel",
+  "description": "Advanced Xray & V2Ray management web panel with 3X-UI Sanaei style, 29 verified global locations, VLESS Reality/VMess/Trojan config generator, live ping health check, and subscription engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
